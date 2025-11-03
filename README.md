@@ -1,12 +1,74 @@
-# React + Vite
+# Sistema de Cadastro de Professores 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação React desenvolvida nas aulas de Web 2 para cadastro e organização de professores por área de atuação.
 
-Currently, two official plugins are available:
+## Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sistema completo de cadastro que permite:
 
-## Expanding the ESLint configuration
+- **Cadastro de professores** com nome, título e imagem
+- **Organização por áreas** de atuação
+- **Visualização em cards** com design moderno
+- **Interface responsiva** para diferentes dispositivos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Objetivos de Aprendizado
+
+- Desenvolvimento de formulários em React
+- Trabalho com componentes funcionais
+- Manipulação de estado e props
+- Estilização com CSS modules
+- Composição de componentes reutilizáveis
+- Validação de dados de entrada
+
+## Tecnologias Utilizadas
+
+- **React** - Biblioteca principal
+- **CSS Modules** - Estilização componentizada
+- **Componentes Funcionais** - Padrão moderno do React
+- **Props e State** - Gerenciamento de dados
+
+## Estrutura do Projeto
+
+```
+src/
+├── componentes/
+│   ├── Banner/           # Banner institucional
+│   ├── Formulario/       # Formulário de cadastro
+│   ├── CampoTexto/       # Input de texto
+│   ├── ListaSuspensa/    # Dropdown de seleção
+│   ├── Botao/            # Botão de ação
+│   ├── Area/             # Seção por área de atuação
+│   ├── Professor/        # Card individual do professor
+│   └── Lista/            # Lista geral de professores
+├── App.jsx               # Componente principal
+└── index.css             # Estilos globais
+```
+
+## Componentes Principais
+
+### Formulario
+Formulário completo para cadastro de novos professores com validação.
+
+### Area
+Seções organizadas por área de conhecimento com cores diferenciadas.
+
+### Professor
+Card individual que exibe foto, nome e título do professor.
+
+### ListaSuspensa
+Dropdown para seleção de área de atuação.
+
+## Como Executar
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+```
+
+---
